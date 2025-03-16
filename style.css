@@ -43,20 +43,43 @@ p {
     margin-bottom: 40px; /* Increased spacing between cards */
 }
 
-.project a {
+/* Общие стили для всех кнопок */
+.btn {
     display: inline-block;
     padding: 10px 15px;
-    background-color: #4c8bf5; /* Синий цвет кнопки */
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
+    text-align: center;
     font-weight: bold;
-    transition: background 0.3s;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.2s;
+    margin-right: 10px; /* Отступ между кнопками */
 }
 
-.project a:hover {
-    background-color: #366bd3; /* Затемнение при наведении */
+/* Синяя кнопка (Watch Video) */
+.btn.primary {
+    background-color: #4c8bf5;
+    color: white;
 }
+
+.btn.primary:hover {
+    background-color: #366bd3;
+}
+
+/* Зелёная кнопка (Development Report) */
+.btn.secondary {
+    background-color: #48c78e;
+    color: white;
+}
+
+.btn.secondary:hover {
+    background-color: #3aa06e;
+}
+
+/* Добавляем лёгкий эффект при нажатии */
+.btn:active {
+    transform: scale(0.95);
+}
+
 
 
 
