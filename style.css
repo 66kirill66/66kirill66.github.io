@@ -1,6 +1,6 @@
 /* General page style */
 body {
-    background: linear-gradient(to right, #7a5cda, #4c9aff); /*Soft violet-blue*/
+    background: linear-gradient(to right, #c2d3e2, #e0e8f0); /* Smooth transition from gray-blue to light blue */
     color: black; /* Black text */
     margin: 0;
     padding: 50px;
