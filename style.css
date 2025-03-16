@@ -84,22 +84,26 @@ p {
 }
 
 .zoomable {
-    width: 100%; /* Картинка заполняет контейнер */
-    max-width: 100%;
-    height: auto;
-    transition: transform 0.3s ease-in-out, z-index 0.3s, left 0.3s ease-in-out;
+    width: 100%; /* Картинка адаптируется под контейнер */
+    max-width: 400px; /* Ограничиваем максимальный размер в обычном состоянии */
+    height: auto; /* Сохраняем пропорции */
+    transition: transform 0.3s ease-in-out, left 0.3s ease-in-out;
     cursor: pointer;
     position: relative;
     border-radius: 8px;
 }
 
-/* При клике увеличиваем и сдвигаем влево */
+/* Увеличенная картинка - смещается влево, но остаётся в правильных пропорциях */
 .zoomable.active {
-    transform: scale(1.8);
+    transform: scale(1.8); /* Увеличиваем картинку */
     position: absolute;
-    z-index: 10;
-    left: -40%; /* Сдвигаем картинку влево */
+    left: -30%; /* Двигаем картинку влево */
+    max-width: none; /* Разрешаем ей увеличиваться */
+    width: auto; /* Сохраняем пропорции */
+    height: auto; /* Сохраняем высоту */
+    z-index: 10; /* Поднимаем выше других элементов */
 }
+
 
 
 
