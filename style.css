@@ -52,3 +52,34 @@ p {
 .no-bullets li {
     margin: 5px 0;
 }
+
+.contact-container {
+    background: rgba(255, 255, 255, 0.2); /* Лёгкий белый фон с прозрачностью */
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 40px auto;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Заголовок внутри контейнера */
+.contact-container p {
+    color: black; /* Делаем текст заголовка чёрным */
+    font-weight: bold;
+}
+
+/* Стили ссылок */
+.contact-container a {
+    color: black; /* Ссылки теперь чёрные */
+    font-size: 18px;
+    display: block;
+    text-decoration: none;
+    margin: 10px 0;
+    transition: 0.3s;
+}
+
+.contact-container a:hover {
+    color: #f0c674; /* Цвет при наведении */
+}
+
