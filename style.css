@@ -96,7 +96,7 @@ p {
 /* При клике увеличиваем */
 .zoomable.active {
     transform: scale(1.8); /* Увеличиваем картинку */
-    position: absolute;
+    position: relative;
     z-index: 10;
 }
 
