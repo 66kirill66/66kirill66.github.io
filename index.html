@@ -6,6 +6,13 @@
     <title>Kirill's Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+    <script>
+document.querySelectorAll('.zoomable').forEach(img => {
+    img.addEventListener('click', function () {
+        this.classList.toggle('active'); // Добавляем/убираем класс active при клике
+    });
+});
+</script>
 <body>
     <h1>Hello, I'm Kirill!</h1>
    <p>I'm a Unity developer specializing in simulations for educational purposes.</p>
@@ -13,7 +20,7 @@
     <h2>My Projects</h2>
     <div class="projects">
         <div class="project">
-            <img src="assets/images/circulatory_system.jpg" alt="Circulatory System Simulation" width="100%">
+            <img src="assets/images/circulatory_system.jpg" alt="Circulatory System Simulation" class="zoomable">
             <h3>Simulation 1 "The Circulatory System" </h3>
            <p>This lesson explores how the circulatory, respiratory, and digestive systems work together to transport essential materials for cellular respiration. 
     Students will learn:
@@ -29,7 +36,7 @@
             <a href="https://youtube.com/your_video_link1">Watch Video</a>
         </div>
         <div class="project">
-            <img src="assets/images/The_Electric_Circuit.jpg" alt="The Electric Circuit" width="100%">
+            <img src="assets/images/The_Electric_Circuit.jpg" alt="The Electric Circuit" class="zoomable">
             <h3>Simulation 2 "The Electric Circuit" </h3>
             <p>In this lesson, students will explore the fundamentals of electric circuits through a virtual lab.  
     They will learn:
