@@ -84,20 +84,23 @@ p {
 }
 
 .zoomable {
-    width: 100%; /* Чтобы картинка занимала всю ширину контейнера */
-    max-width: 400px; /* Ограничение максимального размера */
-    transition: transform 0.3s ease-in-out, z-index 0.3s; /* Плавная анимация */
-    cursor: pointer; /* Указываем, что картинку можно кликнуть */
-    position: relative; /* Позволяет выходить за контейнер */
-    border-radius: 8px; /* Оставляем закруглённые углы */
+    width: 100%; /* Картинка заполняет контейнер */
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out, z-index 0.3s, left 0.3s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    border-radius: 8px;
 }
 
+/* При клике увеличиваем и сдвигаем влево */
 .zoomable.active {
-    transform: scale(1.8); /* Увеличиваем картинку */
-    position: absolute; /* Выносим картинку поверх других элементов */
-    z-index: 10; /* Поднимаем картинку выше других элементов */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Добавляем тень для эффекта */
+    transform: scale(1.8);
+    position: absolute;
+    z-index: 10;
+    left: -40%; /* Сдвигаем картинку влево */
 }
+
 
 
 
