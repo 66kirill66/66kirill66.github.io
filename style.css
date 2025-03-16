@@ -1,7 +1,7 @@
 /* General page style */
 body {
     background: linear-gradient(to right, #7a5cda, #4c9aff); /*Soft violet-blue*/
-    color: white; /* Make text white for better readability */
+    color: black; /* Black text */
     margin: 0;
     padding: 50px;
     font-family: Arial, sans-serif;
