@@ -84,16 +84,19 @@ p {
 }
 
 .zoomable {
-    transition: transform 0.3s ease-in-out, z-index 0.3s; /* Плавная анимация */
-    cursor: pointer; /* Указываем, что на картинку можно нажать */
-    position: relative; /* Позволяет выходить за рамки контейнера */
-    z-index: 1; /* Обычный слой */
+    width: 100%; /* Делаем картинку адаптивной */
+    max-width: 400px; /* Ограничиваем максимальный размер, чтобы не растягивалась на больших экранах */
+    transition: transform 0.3s ease-in-out, z-index 0.3s;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
 }
 
 .zoomable.active {
-    transform: scale(2); /* Увеличиваем картинку в 2 раза */
-    position: absolute; /* Позволяет выходить за рамки контейнера */
-    z-index: 10; /* Поднимаем картинку выше всех элементов */
+    transform: scale(1.8); /* Увеличиваем картинку в 1.8 раза */
+    position: absolute;
+    z-index: 10;
 }
+
 
 
