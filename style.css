@@ -43,7 +43,7 @@ p {
     margin-bottom: 40px; /* Increased spacing between cards */
 }
 
-/* Общие стили для всех кнопок */
+/* Common styles for all buttons */
 .btn {
     display: inline-block;
     padding: 10px 15px;
@@ -52,10 +52,10 @@ p {
     border-radius: 5px;
     text-decoration: none;
     transition: background 0.3s, transform 0.2s;
-    margin-right: 10px; /* Отступ между кнопками */
+    margin-right: 10px; /* Spacing between buttons */
 }
 
-/* Синяя кнопка (Watch Video) */
+/* Blue button (Watch Video) */
 .btn.primary {
     background-color: #4c8bf5;
     color: white;
@@ -65,7 +65,7 @@ p {
     background-color: #366bd3;
 }
 
-/* Зелёная кнопка (Development Report) */
+/* Green button (Development Report) */
 .btn.secondary {
     background-color: #48c78e;
     color: white;
@@ -75,7 +75,7 @@ p {
     background-color: #3aa06e;
 }
 
-/* Добавляем лёгкий эффект при нажатии */
+/* subtle click effect */
 .btn:active {
     transform: scale(0.95);
 }
@@ -95,7 +95,7 @@ p {
 }
 
 .contact-container {
-    background: rgba(255, 255, 255, 0.2); /* Лёгкий белый фон с прозрачностью */
+    background: rgba(255, 255, 255, 0.2); /* Light white background with transparency */
     padding: 20px;
     border-radius: 10px;
     width: 400px;
@@ -104,15 +104,15 @@ p {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Заголовок внутри контейнера */
+/* Heading inside container */
 .contact-container p {
-    color: black; /* Делаем текст заголовка чёрным */
+    color: black; /* title text in black */
     font-weight: bold;
 }
 
-/* Стили ссылок */
+/* Link styles */
 .contact-container a {
-    color: black; /* Ссылки теперь чёрные */
+    color: black; /*  Black Links */
     font-size: 18px;
     display: block;
     text-decoration: none;
@@ -121,22 +121,22 @@ p {
 }
 
 .contact-container a:hover {
-    color: #f0c674; /* Цвет при наведении */
+    color: #f0c674; /* Hover color */
 }
 
 .zoomable {
-    width: 100%; /* Теперь картинка заполняет весь контейнер */
-    max-width: 100%; /* Чтобы не выходила за его границы */
-    height: auto; /* Сохраняет пропорции */
+    width: 100%; /* the picture fills the entire container */
+    max-width: 100%; /* Doesn't go beyond its boundaries */
+    height: auto; /* Maintains proportions */
     transition: transform 0.3s ease-in-out, z-index 0.3s;
     cursor: pointer;
     position: relative;
     border-radius: 8px;
 }
 
-/* При клике увеличиваем */
+/* When clicked, it enlarges */
 .zoomable.active {
-    transform: scale(1.8); /* Увеличиваем картинку */
+    transform: scale(1.8); /* Enlarge the image */
     position: relative;
     z-index: 10;
 }
